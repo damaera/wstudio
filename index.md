@@ -24,12 +24,12 @@ layout: default
         <div class="work-content">
           <h3 class="work-title">{{ post.title }}</h3>
           <table class="monospace">
-            <tr><td>Project Type</td><td>{{ post.project_type }}</td></tr>
+            <tr><td>Project type</td><td>{{ post.project_type }}</td></tr>
             <tr><td>Client</td><td>{{ post.client }}</td></tr>
             <tr><td>Location</td><td>{{ post.location }}</td></tr>
-            <tr><td>Arena</td><td>{{ post.area }} m<sup>2</sup></td></tr>
-            <tr><td>Building Area</td><td>{{ post.building_area }} m<sup>2</sup></td></tr>
-            <tr><td>Project Year</td><td>{{ post.project_year }}</td></tr>
+            <tr><td>Site area</td><td>{{ post.area }} m<sup>2</sup></td></tr>
+            <tr><td>Building area</td><td>{{ post.building_area }} m<sup>2</sup></td></tr>
+            <tr><td>Project year</td><td>{{ post.project_year }}</td></tr>
           </table>
         </div>
         <div class="clear"></div>

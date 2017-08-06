@@ -38,9 +38,9 @@ a {
     text-align: center;
   }
   .name {
-    color: #2D9CDB;
+    color: #EB5757;
     font-weight: normal;
-    font-size: .9em;
+    font-size: 1em;
   }
   .job {
     font-weight: normal;
@@ -76,8 +76,7 @@ nav {
     margin-left: 10px;
 
     &:hover {
-      border-bottom: solid 3px #2D9CDB;
-      color: #2D9CDB;
+      color: #EB5757;
     }
   }
 }
@@ -178,8 +177,11 @@ td {
   margin-bottom: 30px;
 
   &:hover {
-    // background: #EB5757;
+    background: rgba(#EB5757, .3);
     border-color: #EB5757;
+    .work-cover {
+      opacity: .5;
+    }
     h3 {
       color: #EB5757;
     }
