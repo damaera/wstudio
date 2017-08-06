@@ -6,15 +6,35 @@
   <div class="wrapper">
     {% include header.html %}
     <div class="post">
-      <div class="post-images">
-        {% for i in (1..page.images-count) %}
-          <img src="/images/{{ page.image-folder }}/{{ i }}.jpg" alt="" width="32%">
-        {% endfor %}
+      <div class="post-gallery">
+        <div class="post-images siema">
+          {% for i in (1..page.images-count) %}
+            <div>
+              <img src="/images/{{ page.image-folder }}/{{ i }}.jpg" alt="" width="100%">
+            </div>
+          {% endfor %}
+        </div>
+        <div class="post-btn-list monospace">
+          <span class="post-btn prev">prev</span>
+          <span class="post-btn next">next</span>
+        </div>
+
+        <div class="denah">
+          <h3 class="monospace">Floor plan</h3>
+          <div class="post-images">
+            {% for i in (1..page.denah-count) %}
+              <div>
+                <img src="/images/{{ page.image-folder }}/d{{ i }}.jpg" alt="" width="100%">
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+
       </div>
-      <div class="post-left">
+      <div class="post-desc">
         <h2>{{ page.title }}</h2>
         <p>
-          <table>
+          <table class="monospace">
             <tr><td>Project Type</td><td>{{ page.project_type }}</td></tr>
             <tr><td>Client</td><td>{{ page.client }}</td></tr>
             <tr><td>Location</td><td>{{ page.location }}</td></tr>
@@ -23,12 +43,14 @@
             <tr><td>Project Year</td><td>{{ page.project_year }}</td></tr>
           </table>
         </p>
-      </div>
-      <div class="post-right">
-        {{ content }}
+        <div class="post-content">
+          {{ content }}
+        </div>
       </div>
       <div class="clear"></div>
     </div>
   </div>
+  <script src="/assets/siema.min.js"></script>
+  <script src="/assets/main.js"></script>
 </body>
 </html>

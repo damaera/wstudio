@@ -141,14 +141,14 @@ class Polygon
         
         if color > 4
           if color > 6
-            ctx.fillStyle = '#ddd'
+            ctx.fillStyle = '#eee'
           else 
-            ctx.fillStyle = '#d6d6d6'
+            ctx.fillStyle = '#e6e6e6'
         else 
           if color > 2
-            ctx.fillStyle = '#eee'
-          else
             ctx.fillStyle = '#f6f6f6'
+          else
+            ctx.fillStyle = '#fff'
 
         # ctx.strokeStyle = "##{color}#{color}#{color}"
         # ctx.lineWidth = 0.2
@@ -172,8 +172,8 @@ subdivide = Sketch.create
 
     # configurable
     settings:
-        iterations: 20
-        randomness: 0.25
+        iterations: 10
+        randomness: 0.5
         opposite: 0.1
         minAngle: 0.9
         minSide: 9

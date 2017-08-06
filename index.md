@@ -10,7 +10,7 @@ layout: default
     <img class="big-logo" src="/assets/widyatama-studio-logo.png">
     <h1 class="title">Widyatama.Studio</h1>
     <h3 class="name">Ratnasari Widyatama Putri</h3>
-    <div class="jobs">architect</div>
+    <div class="jobs monospace">architect</div>
   </div>
 </div>
 
@@ -23,7 +23,7 @@ layout: default
         <img class="work-cover" src="/images/{{ post.image-folder }}/{{ post.cover }}.jpg">
         <div class="work-content">
           <h3 class="work-title">{{ post.title }}</h3>
-          <table>
+          <table class="monospace">
             <tr><td>Project Type</td><td>{{ post.project_type }}</td></tr>
             <tr><td>Client</td><td>{{ post.client }}</td></tr>
             <tr><td>Location</td><td>{{ post.location }}</td></tr>
