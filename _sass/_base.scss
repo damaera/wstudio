@@ -1,0 +1,150 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Roboto Mono', monospace;
+  line-height: 1.45;
+  color: #222;
+}
+
+p {
+  margin: 20px 0;
+}
+
+* {
+  transition: all 0.15s;
+  // background: rgba(#D91E18, .02);
+}
+
+a {
+  cursor: pointer;
+  color: #446CB3;
+  text-decoration: none;
+}
+
+#container {
+  height: 500px;
+  background: #fff;
+  .big-logo {
+    margin-top: 100px;
+    width: 70px;
+  }
+  .content {
+    position: absolute;
+    width: 960px;
+    text-align: center;
+  }
+  .name {
+    color: #446CB3;
+    font-weight: normal;
+    font-size: .9em;
+  }
+  .job {
+    font-weight: normal;
+    color: #999;
+    font-size: .8em;
+  }
+  .title {
+    font-weight: bold;
+  }
+  canvas {
+    width: 100%;
+    height: 500px;
+    border: none;
+  }
+}
+
+.wrapper {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 20px 0;
+  border-bottom: solid 1px #eee;
+  font-size: 1em;
+}
+
+nav {
+  float: right;
+  margin-top: 5px;
+  span {
+    padding: 10px 0;
+    margin-left: 10px;
+
+    &:hover {
+      border-bottom: solid 3px #446CB3;
+      color: #446CB3;
+    }
+  }
+}
+
+.logo {
+  width: 60px;
+  display: inline-block;
+  img {
+    width: 100%;
+    height: 45.42px;
+  }
+}
+
+table {
+  font-size: 1em;
+  width: 90%;
+}
+td {
+  padding: 5px;
+  border-bottom: solid .1px #eee;
+
+  &:first-child {
+    color: #999;
+  }
+}
+.post {
+  font-size: .9em;
+  &-left {
+    width: 40%;
+    float: left;
+  }
+
+  &-right {
+    font-size: .8em;
+    width: 60%;
+    float: left;
+  }
+}
+
+.clear:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.works {
+
+}
+
+.anchor {
+  text-align: center;
+  padding: 20px;
+  border-bottom: solid 1px #eee;
+  margin-bottom: 20px;
+}
+
+.work {
+  border: solid 1px #ddd;
+  margin-bottom: 30px;
+  
+  &-cover {
+    width: 50%;
+    float: left;
+    background: #eee;
+  }
+  &-content {
+    float: left;
+    width: 50%;
+    padding: 20px;
+    table {
+      font-size: .8em;
+    }
+  }
+}

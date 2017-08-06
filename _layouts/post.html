@@ -1,0 +1,34 @@
+<html>
+<head>
+  {% include head.html %}
+</head>
+<body>
+  <div class="wrapper">
+    {% include header.html %}
+    <div class="post">
+      <div class="post-images">
+        {% for i in (1..page.images-count) %}
+          <img src="/images/{{ page.image-folder }}/{{ i }}.jpg" alt="" width="32%">
+        {% endfor %}
+      </div>
+      <div class="post-left">
+        <h2>{{ page.title }}</h2>
+        <p>
+          <table>
+            <tr><td>Project Type</td><td>{{ page.project_type }}</td></tr>
+            <tr><td>Client</td><td>{{ page.client }}</td></tr>
+            <tr><td>Location</td><td>{{ page.location }}</td></tr>
+            <tr><td>Arena</td><td>{{ page.area }} m<sup>2</sup></td></tr>
+            <tr><td>Building Area</td><td>{{ page.building_area }} m<sup>2</sup></td></tr>
+            <tr><td>Project Year</td><td>{{ page.project_year }}</td></tr>
+          </table>
+        </p>
+      </div>
+      <div class="post-right">
+        {{ content }}
+      </div>
+      <div class="clear"></div>
+    </div>
+  </div>
+</body>
+</html>
