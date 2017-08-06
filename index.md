@@ -5,7 +5,7 @@
 layout: default
 ---
 
-<div id="container">
+<div id="container" class="shadow">
   <div class="content">
     <img class="big-logo" src="/assets/widyatama-studio-logo.png">
     <h1 class="title">Widyatama.Studio</h1>
@@ -19,7 +19,7 @@ layout: default
   {% assign iteration = 0 %}
   {% for post in site.posts %}
     <a href="{{ post.url }}">
-      <div class="work">
+      <div class="work shadow">
         <img class="work-cover" src="/images/{{ post.image-folder }}/{{ post.cover }}.jpg">
         <div class="work-content">
           <h3 class="work-title">{{ post.title }}</h3>

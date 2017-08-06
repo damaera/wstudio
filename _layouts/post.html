@@ -7,7 +7,7 @@
     {% include header.html %}
     <div class="post">
       <div class="post-gallery">
-        <div class="post-images siema">
+        <div class="post-images siema shadow">
           {% for i in (1..page.images-count) %}
             <div>
               <img src="/images/{{ page.image-folder }}/{{ i }}.jpg" alt="" width="100%">
@@ -15,13 +15,13 @@
           {% endfor %}
         </div>
         <div class="post-btn-list monospace">
-          <span class="post-btn prev">prev</span>
-          <span class="post-btn next">next</span>
+          <span class="post-btn prev shadow">prev</span>
+          <span class="post-btn next shadow">next</span>
         </div>
 
         <div class="denah">
           <h3 class="monospace">Floor plan</h3>
-          <div class="post-images">
+          <div class="post-images shadow">
             {% for i in (1..page.denah-count) %}
               <div>
                 <img src="/images/{{ page.image-folder }}/d{{ i }}.jpg" alt="" width="100%">
