@@ -6,8 +6,8 @@ permalink: work/open-space-project
 project_type : Residential Housing
 client : Mr. Andri & Mrs. Endah
 location : Colomadu, Karanganyar, Central Java, Indonesia
-area : -
-building_area : -
+area : x
+building_area : x
 project_year : 2016
 
 cover: 2
