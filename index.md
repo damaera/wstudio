@@ -16,8 +16,7 @@ layout: default
 
 <div id="works">
   <h2 class="anchor">Works.</h2>
-  {% assign iteration = 0 %}
-  {% for post in site.posts %}
+  {% for post in site.posts limit:4 %}
     <a href="{{ post.url }}">
       <div class="work shadow">
         <img class="work-cover" src="/images/{{ post.image-folder }}/{{ post.cover }}.jpg">
@@ -36,6 +35,10 @@ layout: default
       </div>
     </a>
   {% endfor %}
+</div>
+
+<div class="post-btn-list">
+  <button class="btn red shadow monospace">View more.</button>
 </div>
 
 <script src="https://soulwire.github.io/sketch.js/js/sketch.min.js"></script>

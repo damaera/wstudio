@@ -6,6 +6,7 @@
   <div class="wrapper">
     {% include header.html %}
     <div class="post">
+      <h2 class="hide-desktop">{{ page.title }}</h2>
       <div class="post-gallery">
         <div class="post-images siema shadow">
           {% for i in (1..page.images-count) %}
@@ -15,8 +16,8 @@
           {% endfor %}
         </div>
         <div class="post-btn-list monospace">
-          <span class="post-btn prev shadow">prev</span>
-          <span class="post-btn next shadow">next</span>
+          <span class="btn blue shadow">Prev</span>
+          <span class="btn red shadow">Next</span>
         </div>
 
         <div class="denah">
@@ -32,7 +33,7 @@
 
       </div>
       <div class="post-desc">
-        <h2>{{ page.title }}</h2>
+        <h2 class="show-desktop">{{ page.title }}</h2>
         <p>
           <table class="monospace">
             <tr><td>Project type</td><td>{{ page.project_type }}</td></tr>

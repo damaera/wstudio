@@ -1,3 +1,5 @@
+$break: 768px;
+
 body {
   padding: 0;
   margin: 0;
@@ -6,8 +8,27 @@ body {
   color: #222;
 }
 
+.show-desktop {
+  display: inherit;
+  @media screen and (max-width: $break) {
+    display: none;
+  }
+}
+
+.hide-desktop {
+  display: none;
+  @media screen and (max-width: $break) {
+    display: inherit;
+  }
+}
+
 .monospace {
   font-family: 'Roboto Mono', monospace;
+}
+
+button {
+  border: none;
+  outline: none;
 }
 
 p {
@@ -36,6 +57,9 @@ a {
     position: absolute;
     width: 960px;
     text-align: center;
+    @media screen and (max-width: $break) {
+      width: 100%;
+    }
   }
   .name {
     color: #EB5757;
@@ -84,6 +108,9 @@ nav {
 .logo {
   width: 60px;
   display: inline-block;
+  @media screen and (max-width: $break) {
+    display: none;
+  }
   img {
     width: 100%;
     height: 45.42px;
@@ -118,6 +145,17 @@ td {
   &-desc {
     width: 36%;
     float: left;
+    @media screen and (max-width: $break) {
+      width: 100%;
+    }
+  }
+
+  &-gallery {
+    width: 64%;
+    float: left;
+    @media screen and (max-width: $break) {
+      width: 100%;
+    }
   }
 
   &-images {
@@ -131,31 +169,28 @@ td {
     font-size: .8em;
   }
 
-  &-gallery {
-    width: 64%;
-    float: left;
-  }
 
   &-btn-list {
     text-align: center;
     margin-top: 20px;
   }
 
-  &-btn {
-    padding: 10px 30px;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
-    &:hover {
-      opacity: .7;
-    }
-    &.prev {
-      background: #2D9CDB;
-      // margin-right: 5px;
-    }
-    &.next {
-      background: #EB5757;
-    }
+}
+.btn {
+  padding: 10px 30px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  background: #222;
+  &:hover {
+    opacity: .7;
+  }
+  &.blue {
+    background: #2D9CDB;
+    // margin-right: 5px;
+  }
+  &.red {
+    background: #EB5757;
   }
 }
 
@@ -181,7 +216,7 @@ td {
 
   &:hover {
     background: rgba(#EB5757, .1);
-    border-color: #EB5757;
+    // border-color: #EB5757;
     .work-cover {
       opacity: .5;
     }
@@ -194,11 +229,17 @@ td {
     width: 50%;
     float: left;
     background: #eee;
+    @media screen and (max-width: $break) {
+      width: 100%;
+    }
   }
   &-content {
     float: left;
     width: 50%;
     padding: 20px;
+    @media screen and (max-width: $break) {
+      width: 100%;
+    }
     table {
       font-size: .8em;
     }
