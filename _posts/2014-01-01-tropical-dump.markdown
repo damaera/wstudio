@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tropical Dump House
-permalink: tropical-dump-house
+permalink: work/tropical-dump-house
 
 project_type : Mixed-use Building as Production House and House (Collage Projects)
 client : Putri Cempo Dump, Mojosongo

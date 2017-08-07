@@ -1,7 +1,7 @@
 ---
 layout: post
 title: White House Project
-permalink: white-house-project
+permalink: work/white-house-project
 
 project_type : Residential Housing
 client : Mr. & Mrs. Wahono
