@@ -4,7 +4,7 @@ title: Tropical Dump House
 permalink: work/tropical-dump-house
 
 project_type : Mixed-use Building as Production House and House (Collage Projects)
-client : Putri Cempo Dump, Mojosongo
+client : -
 location : Mojosongo, Surakarta, Central Java, Indonesia.
 area : 96
 building_area : 105
