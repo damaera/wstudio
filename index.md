@@ -51,7 +51,7 @@ layout: default
       <tr>
         <td>Phone</td>
         <td>:</td>
-        <td>+62 085 728 176 376</td>
+        <td>+62 85 728 176 376</td>
       </tr>
       <tr>
         <td>Email</td>
